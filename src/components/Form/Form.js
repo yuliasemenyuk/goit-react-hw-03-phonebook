@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import propTypes from "prop-types";
 import style from "./Form.module.css";
 
 class Form extends Component {
@@ -9,13 +10,10 @@ class Form extends Component {
 
   handleNameInputChange = (evt) => {
     this.setState({ name: evt.target.value });
-
-    console.log(this.state);
   };
 
   handleNumberInputChange = (evt) => {
     this.setState({ number: evt.target.value });
-    console.log(this.state);
   };
 
   handleSubmit = (evt) => {
@@ -64,5 +62,12 @@ class Form extends Component {
     );
   }
 }
+
+Form.propTypes = {
+  handleNameInputChange: propTypes.func,
+  handleNumberInputChange: propTypes.func,
+  handleSubmit: propTypes.func,
+  reset: propTypes.func,
+};
 
 export default Form;

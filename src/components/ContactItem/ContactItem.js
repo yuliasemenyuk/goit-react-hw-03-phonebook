@@ -8,7 +8,7 @@ const ContactItem = ({ contactItem }) => (
 );
 
 ContactItem.propTypes = {
-  contactItem: propTypes.object,
+  contactItem: propTypes.object.isRequired,
 };
 
 export default ContactItem;

@@ -20,8 +20,8 @@ class ContactList extends Component {
 }
 
 ContactList.propTypes = {
-  contacts: propTypes.array,
-  onDeleteContact: propTypes.func,
+  contacts: propTypes.array.isRequired,
+  onDeleteContact: propTypes.func.isRequired,
 };
 
 export default ContactList;
