@@ -36,6 +36,7 @@ class Form extends Component {
         <label className={style.saving_lable}>
           Name{" "}
           <input
+            className={style.input}
             type="text"
             name="name"
             value={name}
@@ -48,6 +49,7 @@ class Form extends Component {
         <label className={style.saving_lable}>
           Number
           <input
+            className={style.input}
             type="number"
             name="number"
             value={number}
